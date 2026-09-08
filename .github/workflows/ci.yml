@@ -19,4 +19,5 @@ jobs:
           echo "$HOME/.moon/bin" >> "$GITHUB_PATH"
       - name: Resolve and build consumer
         run: |
+          moon update
           moon check
