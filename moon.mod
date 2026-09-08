@@ -8,4 +8,5 @@ preferred_target = "native"
 
 import {
   "0717lee/moonhostabi@0.1.1",
+  "moonbitlang/x@0.5.1",
 }
