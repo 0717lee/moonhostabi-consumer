@@ -1,0 +1,4 @@
+import {
+  "0717lee/moonhostabi/src/lockfile",
+  "0717lee/moonhostabi/src/model",
+} for "wbtest"
