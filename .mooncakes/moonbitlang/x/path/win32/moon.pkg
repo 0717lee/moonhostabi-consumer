@@ -1,0 +1,8 @@
+import {
+  "moonbitlang/core/env",
+  "moonbitlang/core/json",
+  "moonbitlang/core/cmp",
+  "moonbitlang/x/unicode",
+}
+
+warnings = "-1"

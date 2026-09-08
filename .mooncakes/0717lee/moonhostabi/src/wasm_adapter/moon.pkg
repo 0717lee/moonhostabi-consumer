@@ -1,0 +1,8 @@
+import {
+  "Milky2018/wasm_core/parser" @wasm_parser,
+  "Milky2018/wasm_core/types" @wasm_types,
+}
+
+import {
+  "moonbitlang/x/fs",
+} for "wbtest"

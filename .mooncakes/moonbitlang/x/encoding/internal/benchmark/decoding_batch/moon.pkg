@@ -1,0 +1,7 @@
+import {
+  "moonbitlang/core/env",
+  "moonbitlang/x/encoding",
+  "moonbitlang/x/encoding/internal/benchmark" @bench,
+}
+
+pkgtype(kind: "executable")

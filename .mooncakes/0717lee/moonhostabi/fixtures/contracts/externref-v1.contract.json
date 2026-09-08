@@ -1,0 +1,1 @@
+{"schemaVersion":1,"abiSha256":"ecc9ee29e442515286ed65d66f0b3765c3beb015e086e9022fe641d9e0ccc6d7","externrefGeneric":"HostToken","imports":[{"module":"host","name":"echo","signature":"(externref)->(externref)","implementation":"required","unresolvedSemanticNames":[]}]}

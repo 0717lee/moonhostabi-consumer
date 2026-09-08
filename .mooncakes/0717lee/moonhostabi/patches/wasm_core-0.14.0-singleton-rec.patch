@@ -1,0 +1,22 @@
+diff --git a/parser/rec_group_types.mbt b/parser/rec_group_types.mbt
+--- a/parser/rec_group_types.mbt
++++ b/parser/rec_group_types.mbt
+@@ -257,8 +257,17 @@ fn Parser::read_rec_group(
+     }
+     defs
+   } else {
++    let base_idx = self.types.length()
++    let scan : Parser = {
++      data: self.data,
++      pos: self.pos,
++      has_data_count: self.has_data_count,
++      types: [],
++    }
++    let composite_tag = skip_subtype_and_get_composite_tag(scan)
++    self.types.push(placeholder_subtype_by_composite_tag(composite_tag))
+     let subtype = self.read_subtype()
+-    self.types.push(subtype)
++    self.types[base_idx] = subtype
+     [subtype]
+   }
+ }

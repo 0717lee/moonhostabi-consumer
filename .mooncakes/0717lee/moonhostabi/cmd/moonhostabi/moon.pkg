@@ -1,0 +1,24 @@
+import {
+  "0717lee/moonhostabi/src/compat",
+  "0717lee/moonhostabi/src/contract",
+  "0717lee/moonhostabi/src/generator",
+  "0717lee/moonhostabi/src/lockfile",
+  "0717lee/moonhostabi/src/model",
+  "0717lee/moonhostabi/src/projector",
+  "0717lee/moonhostabi/src/verification",
+  "0717lee/moonhostabi/src/wasm_adapter",
+  "moonbitlang/core/encoding/utf8",
+  "moonbitlang/core/env",
+  "moonbitlang/core/json",
+  "moonbitlang/x/fs",
+  "moonbitlang/x/path",
+  "moonbitlang/x/sys",
+}
+
+pkgtype(kind: "executable")
+
+supported_targets = "native"
+
+options(
+  "native-stub": [ "stderr.c" ],
+)

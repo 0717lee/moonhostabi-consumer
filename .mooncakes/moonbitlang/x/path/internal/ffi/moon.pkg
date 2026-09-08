@@ -1,0 +1,7 @@
+import {
+  "moonbitlang/core/env",
+} for "test"
+
+options(
+  "native-stub": [ "native_stub.c" ],
+)

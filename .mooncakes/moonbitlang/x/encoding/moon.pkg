@@ -1,0 +1,9 @@
+import {
+  "moonbitlang/core/buffer",
+  "moonbitlang/core/cmp",
+  "moonbitlang/x/unicode",
+}
+
+import {
+  "moonbitlang/core/test",
+} for "test"
