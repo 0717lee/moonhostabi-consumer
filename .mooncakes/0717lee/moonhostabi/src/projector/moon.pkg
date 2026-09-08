@@ -1,9 +1,0 @@
-import {
-  "0717lee/moonhostabi/src/model",
-  "Milky2018/wasm_core/types" @wasm_types,
-}
-
-import {
-  "0717lee/moonhostabi/src/wasm_adapter",
-  "moonbitlang/x/fs",
-} for "wbtest"
