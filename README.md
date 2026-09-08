@@ -1,7 +1,7 @@
 # MoonHostABI consumer smoke test
 
 This is a minimal independent MoonBit project that resolves the published
-`0717lee/moonhostabi@0.1.1` package from Mooncakes. Its test imports the public
+`0717lee/moonhostabi@0.2.0` package from Mooncakes. Its test imports the public
 model and lockfile packages, creates a lockfile, roundtrips it, and checks the
 canonical ABI fingerprint. It verifies that a clean downstream project can
 resolve, compile, and call the published library API. A second test parses the
