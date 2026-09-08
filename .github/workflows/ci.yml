@@ -11,13 +11,18 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - name: Install MoonBit
         shell: bash
+        env:
+          MOONBIT_SNAPSHOT: 0.10.11+6ff76a5f9
         run: |
-          curl -fsSL https://cli.moonbitlang.com/install/unix.sh | bash
+          installer="$RUNNER_TEMP/moonbit-install.sh"
+          curl -fsSL https://cli.moonbitlang.com/install/unix.sh -o "$installer"
+          MOONBIT_INSTALL_VERSION="$MOONBIT_SNAPSHOT" bash "$installer"
           echo "$HOME/.moon/bin" >> "$GITHUB_PATH"
       - name: Resolve and build consumer
         run: |
           moon update
-          moon check
+          moon check --deny-warn
+          moon test --target native --deny-warn
