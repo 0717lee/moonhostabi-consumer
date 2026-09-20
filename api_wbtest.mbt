@@ -1,3 +1,4 @@
+///|
 test "published MoonHostABI library API roundtrips a lockfile" {
   let abi = @model.HostAbi::{
     schema_version: 1,
@@ -17,6 +18,7 @@ test "published MoonHostABI library API roundtrips a lockfile" {
   inspect(@lockfile.host_abi_sha256(abi).length(), content="64")
 }
 
+///|
 test "published API parses a real recursive Wasm-GC artifact" {
   let bytes = @fs.read_file_to_bytes("fixtures/rec-a.wasm")
   let analysis : Result[@projector.ProjectionAnalysis, String] = Ok(

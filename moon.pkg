@@ -2,6 +2,7 @@ import {
   "0717lee/moonhostabi/src/lockfile",
   "0717lee/moonhostabi/src/model",
   "0717lee/moonhostabi/src/projector",
+  "0717lee/moonhostabi/src/resource",
   "0717lee/moonhostabi/src/wasm_adapter",
   "moonbitlang/x/fs",
 } for "wbtest"
