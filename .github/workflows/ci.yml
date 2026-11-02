@@ -15,7 +15,7 @@ jobs:
       - name: Install MoonBit
         shell: bash
         env:
-          MOONBIT_SNAPSHOT: 0.10.16+b1a0e846e
+          MOONBIT_SNAPSHOT: 0.10.19+97801ee1b
         run: |
           installer="$RUNNER_TEMP/moonbit-install.sh"
           curl -fsSL https://cli.moonbitlang.com/install/unix.sh -o "$installer"
