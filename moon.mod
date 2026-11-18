@@ -13,6 +13,6 @@ description = "Minimal MoonBit consumer smoke test for MoonHostABI"
 preferred_target = "native"
 
 import {
-  "0717lee/moonhostabi@0.6.0",
+  "0717lee/moonhostabi@0.6.1",
   "moonbitlang/x@0.5.6",
 }

@@ -12,7 +12,7 @@ test "published MoonHostABI library API roundtrips a lockfile" {
   let decoded : Result[@lockfile.AbiLockfile, String] = Ok(
     @lockfile.decode_lockfile(encoded),
   ) catch {
-    error => Err(error.to_string())
+    error => Err(Show::to_string(error))
   }
   inspect(decoded == Ok(lock), content="true")
   inspect(@lockfile.host_abi_sha256(abi).length(), content="64")
@@ -27,7 +27,7 @@ test "published API parses a real recursive Wasm-GC artifact" {
       @projector.default_js_capability_policy(),
     ),
   ) catch {
-    error => Err(error.to_string())
+    error => Err(Show::to_string(error))
   }
   match analysis {
     Ok(value) => {
